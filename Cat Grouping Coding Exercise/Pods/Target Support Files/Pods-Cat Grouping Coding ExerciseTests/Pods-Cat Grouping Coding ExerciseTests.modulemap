@@ -1,0 +1,6 @@
+framework module Pods_Cat_Grouping_Coding_ExerciseTests {
+  umbrella header "Pods-Cat Grouping Coding ExerciseTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
