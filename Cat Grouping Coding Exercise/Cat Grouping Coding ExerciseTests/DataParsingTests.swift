@@ -54,8 +54,8 @@ class DataParsingTests: XCTestCase {
                                   nil)
     
     let expectation = XCTestExpectation(description: "Cats are grouped by owner gender")
-    let expectedData: [Gender: [Pet]] = [.Male: [cat1], .Female: [cat2]]
-    Person.catPeopleByGender(url: url, session: mockSession)
+    let expectedData: CatGrouping.Grouping = [.Male: [cat1], .Female: [cat2]]
+    CatGrouping.catPeopleByGender(url: url, session: mockSession)
       .take(first: 1)
       .observe(on: UIScheduler())
       .startWithResult { result in
@@ -86,8 +86,8 @@ class DataParsingTests: XCTestCase {
                                   nil)
     
     let expectation = XCTestExpectation(description: "Cats are grouped by owner gender")
-    let expectedData: [Gender: [Pet]] = [.Male: [cat1, cat2]]
-    Person.catPeopleByGender(url: url, session: mockSession)
+    let expectedData: CatGrouping.Grouping = [.Male: [cat1, cat2]]
+    CatGrouping.catPeopleByGender(url: url, session: mockSession)
       .take(first: 1)
       .observe(on: UIScheduler())
       .startWithResult { result in
@@ -118,8 +118,8 @@ class DataParsingTests: XCTestCase {
                                   nil)
     
     let expectation = XCTestExpectation(description: "Cats are grouped by owner gender")
-    let expectedData: [Gender: [Pet]] = [.Male: [cat1, cat2, cat3], .Female: [cat4, cat5]]
-    Person.catPeopleByGender(url: url, session: mockSession)
+    let expectedData: CatGrouping.Grouping = [.Male: [cat1, cat2, cat3], .Female: [cat4, cat5]]
+    CatGrouping.catPeopleByGender(url: url, session: mockSession)
       .take(first: 1)
       .observe(on: UIScheduler())
       .startWithResult { result in
