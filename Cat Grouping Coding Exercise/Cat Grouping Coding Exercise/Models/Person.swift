@@ -23,27 +23,6 @@ enum Gender: String, Codable {
 struct Person: Codable, Equatable {
   let name: String
   let gender: Gender
-  let pets: [Pet]
+  let pets: [Pet]?
 }
 
-extension Person {
-  static func catPeopleByGender(url: URL, session: URLSession = URLSession.shared) -> SignalProducer<[Gender: [Pet]], NSError> {
-    let peopleProducer: SignalProducer<[Person], NSError> = url.makeRequest(session: session)
-    return peopleProducer
-      .take(first: 1)
-      .observe(on: UIScheduler())
-      .map { (people: [Person]) -> [Gender: [Pet]] in
-        let result: [Gender: [Pet]] = [:]
-        return people
-          .reduce(into: result) { (acc, person) in
-            let allPets = person.pets.filter { $0.type.lowercased() == "cat" }
-            guard allPets.count > 0 else { return }
-            acc[person.gender] = acc[person.gender] ?? []
-            acc[person.gender]?.append(contentsOf: allPets)
-          }
-          .mapValues { (pets) -> [Pet] in
-            pets.sorted(by: { $0.name < $1.name })
-          }
-      }
-  }
-}

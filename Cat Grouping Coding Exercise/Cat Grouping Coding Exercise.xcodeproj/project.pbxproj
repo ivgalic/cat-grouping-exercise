@@ -20,6 +20,7 @@
 		C91839EE20CDEE0E00B5D694 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91839ED20CDEE0E00B5D694 /* Person.swift */; };
 		C91839F020CDEE6900B5D694 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91839EF20CDEE6900B5D694 /* Pet.swift */; };
 		C91839F220CDFC8A00B5D694 /* DataParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91839F120CDFC8A00B5D694 /* DataParsingTests.swift */; };
+		C91839F420CE02CB00B5D694 /* CatGrouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91839F320CE02CB00B5D694 /* CatGrouping.swift */; };
 		DA8BF14475C497C303180DD1 /* Pods_Cat_Grouping_Coding_Exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E66F7C084AC7A7BAE39820B /* Pods_Cat_Grouping_Coding_Exercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		C91839ED20CDEE0E00B5D694 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C91839EF20CDEE6900B5D694 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		C91839F120CDFC8A00B5D694 /* DataParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParsingTests.swift; sourceTree = "<group>"; };
+		C91839F320CE02CB00B5D694 /* CatGrouping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGrouping.swift; sourceTree = "<group>"; };
 		EA3375280A2A3AE6164EE108 /* Pods-Cat Grouping Coding ExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat Grouping Coding ExerciseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cat Grouping Coding ExerciseTests/Pods-Cat Grouping Coding ExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F19BF119B4F2D4ECA41CAE57 /* Pods-Cat Grouping Coding ExerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat Grouping Coding ExerciseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cat Grouping Coding ExerciseTests/Pods-Cat Grouping Coding ExerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 			children = (
 				C91839ED20CDEE0E00B5D694 /* Person.swift */,
 				C91839EF20CDEE6900B5D694 /* Pet.swift */,
+				C91839F320CE02CB00B5D694 /* CatGrouping.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				C91839F020CDEE6900B5D694 /* Pet.swift in Sources */,
 				C91839C820CCB07200B5D694 /* ViewController.swift in Sources */,
 				C91839E720CCB5EB00B5D694 /* URL+Reactive.swift in Sources */,
+				C91839F420CE02CB00B5D694 /* CatGrouping.swift in Sources */,
 				C91839EE20CDEE0E00B5D694 /* Person.swift in Sources */,
 				C91839C620CCB07200B5D694 /* AppDelegate.swift in Sources */,
 			);
